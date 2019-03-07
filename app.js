@@ -1,11 +1,7 @@
+// Intantiate EasyHTTP objects
 const http = new EasyHTTP; 
 
-// Get Users
-
-// Like this just returns the Promise 
-// const users = http.get('https://jsonplaceholder.typicode.com/users');
-
-// Do it asynchronously
+// HTTP Get Request
 http.get('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
   .catch(err => console.log(err));
